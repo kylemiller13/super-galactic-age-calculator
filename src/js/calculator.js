@@ -8,4 +8,8 @@ export class Calc {
     this.mars = 1.88;
     this.jupiter = 11.86;
   }
+  ageOnPlanets(){
+    this.mercuryAge = parseFloat((this.age / this.mercury).toFixed(1));
+
+  }
 }
