@@ -20,4 +20,9 @@ describe('Calc', () => {
     userAge.ageOnPlanets();
     expect(userAge.marsAge).toEqual(12.2);
   });
+  test('should coorectly determine age on Jupiter when age on Earth is 23 years old', () => {
+    const userAge = new Calc(23);
+    userAge.ageOnPlanets();
+    expect(userAge.jupiterAge).toEqual(1.9);
+  });
 });
