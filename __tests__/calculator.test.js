@@ -10,4 +10,9 @@ describe('Calc', () => {
     userAge.ageOnPlanets();
     expect(userAge.mercuryAge).toEqual(95.8)
   });
+  test("should correctly determine age on venus when age on Earth is 23 years old", () => {
+    const userAge = new Calc(23);
+    userAge.ageOnPlanets();
+    expect(userAge.venusAge).toEqual(37.1);
+  });
 });
