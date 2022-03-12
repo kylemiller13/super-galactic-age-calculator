@@ -30,9 +30,15 @@ describe('Calc', () => {
     userAge.lifeExpectance();
     expect(userAge.mercuryExpectance).toEqual(325);
   });
-  test('should correctly determine life expectance on Venus when life Expectance is 78 on Earth', () => {
+  test('should correctly determine life expectance on Venus when lifeExpectance is 78 on Earth', () => {
     const userAge = new Calc(23,78);
     userAge.lifeExpectance();
-    expect(userAge.venusExpectance).toEqual(122);
+    expect(userAge.venusExpectance).toEqual(125.8);
   });
+  test('should correctly determine life expectance on Mars when lifeExpectance is 78 on Earth', () => {
+    const userAge = new Calc(23,78);
+    userAge.lifeExpectance();
+    expect(userAge.marsExpectance).toEqual(41.4);
+  })
+
 });
