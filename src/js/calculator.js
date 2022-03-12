@@ -14,4 +14,7 @@ export class Calc {
     this.marsAge = parseFloat((this.age / this.mars).toFixed(1));
     this.jupiterAge = parseFloat((this.age / this.jupiter).toFixed(1)); 
   }
+  lifeExpectance(){
+    this.mercuryExpectance = parseFloat((this.earthLifeExpectance / this.mercury).toFixed(1));
+  }
 }
