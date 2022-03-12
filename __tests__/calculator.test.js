@@ -2,7 +2,7 @@ import { Calc } from "../src/js/calculator";
 
 describe('Calc', () => {
   test('should correctly determine if userAge is correctly with the inputted age', () => { 
-    const userAge = new Calc(23, 100);
+    const userAge = new Calc(23);
     expect(userAge.age).toEqual(23);
   });
   test("should correctly determine age on Mercury when age on Earth is 23 years old", () => {
@@ -25,9 +25,14 @@ describe('Calc', () => {
     userAge.ageOnPlanets();
     expect(userAge.jupiterAge).toEqual(1.9);
   });
-  test('should correctly determine life expectance on Mercury when userAge is 78 on Earth', () => {
-    const userAge = new Calc(78);
-    userAge.earthLifeExpectance();
-    expect(userAge.mercuryExpectance).toEqual(325)
-  })
+  test('should correctly determine life expectance on Mercury when lifeExpectance is 78 on Earth', () => {
+    const userAge = new Calc(23, 78);
+    userAge.lifeExpectance();
+    expect(userAge.mercuryExpectance).toEqual(325);
+  });
+  test('should correctly determine life expectance on Venus when life Expectance is 78 on Earth', () => {
+    const userAge = new Calc(23,78);
+    userAge.lifeExpectance();
+    expect(userAge.venusExpectance).toEqual(122);
+  });
 });
