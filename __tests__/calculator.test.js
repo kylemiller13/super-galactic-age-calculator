@@ -70,11 +70,16 @@ describe('Calc', () => {
     userAge.lifeResult();
     expect(userAge.jupiterResult).toEqual(4);
   });
-  test('should correctly determine how many years a person has lived past their lifeSurpassed', () => {
+  test('should correctly determine how many years a person has lived past their life expectancy on Earth', () => {
     const userLifeSurpassed = new Calc(100, 78);
     userLifeSurpassed.lifeSurpassed();
     expect(userLifeSurpassed.earthSurpassed).toEqual(22);
   });
+  test('should correctly determine how many years a person has lived past their life expectancy on mercury', () => {
+    const userLifeSurpassed = new Calc(100, 78);
+    userLifeSurpassed.lifeSurpassed();
+    expect(userLifeSurpassed.marsSurpassed).toEqual(91);
+  })
 
 
 });
