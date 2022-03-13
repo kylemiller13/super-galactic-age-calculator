@@ -25,5 +25,6 @@ export class Calc {
     this.mercuryResult = parseInt((this.earthResult / this.mercury));
     this.venusResult = parseInt((this.earthResult / this.venus));
     this.marsResult = parseInt((this.earthResult / this.mars));
+    this.jupiterResult = parseInt((this.earthResult / this.jupiter));
   }
 }
