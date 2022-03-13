@@ -11,6 +11,10 @@
 * Node Package Manager
 * Jest
 * Webpack
+* Babel
+* ES Lint
+
+
 
 ## Description:
 
