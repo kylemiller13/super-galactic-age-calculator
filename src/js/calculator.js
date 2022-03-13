@@ -27,4 +27,9 @@ export class Calc {
     this.marsResult = parseInt((this.earthResult / this.mars));
     this.jupiterResult = parseInt((this.earthResult / this.jupiter));
   }
+  lifeSurpassed() {
+    if (this.age > this.earthLifeExpectance){
+      this.earthSurpassed = parseInt((this.age - this.earthLifeExpectance));
+    }
+  }
 }
