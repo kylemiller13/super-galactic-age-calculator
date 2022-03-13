@@ -68,7 +68,13 @@ describe('Calc', () => {
   test('should correctly determine the life result on Jupiter, when Earth age is 23 years old', () => {
     const userAge = new Calc(23,78);
     userAge.lifeResult();
-    expect(userAge.jupiterResult).toEqual(4.6)
-  })
+    expect(userAge.jupiterResult).toEqual(4);
+  });
+  test('should correctly determine how many years a person has lived past their lifeSurpassed', () => {
+    const userLifeSurpassed = new Calc(100, 78);
+    userLifeSurpassed.lifeSurpassed();
+    expect(userLifeSurpassed.earthSurpassed).toEqual(22);
+  });
+
 
 });
