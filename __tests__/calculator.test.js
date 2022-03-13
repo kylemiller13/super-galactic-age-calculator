@@ -83,12 +83,17 @@ describe('Calc', () => {
   test('should correctly determine how many years a person has lived past their life expectancy on Venus', () => {
     const userLifeSurpassed = new Calc(100,78);
     userLifeSurpassed.lifeSurpassed();
-    expect(userLifeSurpassed.venusSurpassed).toEqual(11.7);
+    expect(userLifeSurpassed.venusSurpassed).toEqual(35.5);
   }) 
   test('should correctly determine how many years a person has lived past their life expectancy on Mars', () => {
     const userLifeSurpassed = new Calc(100,78);
     userLifeSurpassed.lifeSurpassed();
     expect(userLifeSurpassed.marsSurpassed).toEqual(11.7);
+  })
+  test('should correctly determine how many years a person has lived past their life expectancy on Jupiter', () => {
+    const userLifeSurpassed = new Calc(100,78);
+    userLifeSurpassed.lifeSurpassed();
+    expect(userLifeSurpassed.jupiterSurpassed).toEqual(1.8);
   })
 
 
