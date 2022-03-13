@@ -58,7 +58,12 @@ describe('Calc', () => {
   test('should correctly determine the life result on Venus, when Earth age is 23 years old', () => {
     const userAge = new Calc(23,78);
     userAge.lifeResult();
-    expect(userAge.venusResult).toEqual(29.2)
-  })
+    expect(userAge.venusResult).toEqual(88);
+  });
+  test('should correctly determine the life result on Mars, when Earth age is 23 years old', () => {
+    const userAge = new Calc(23,78);
+    userAge.lifeResult();
+    expect(userAge.marsResult).toEqual(29.3);
+  });
 
 });
