@@ -93,8 +93,6 @@ describe('Calc', () => {
   test('should correctly determine how many years a person has lived past their life expectancy on Jupiter', () => {
     const userLifeSurpassed = new Calc(100,78);
     userLifeSurpassed.lifeSurpassed();
-    expect(userLifeSurpassed.jupiterSurpassed).toEqual(1.8);
+    expect(userLifeSurpassed.jupiterSurpassed).toEqual(1.9);
   })
-
-
 });
