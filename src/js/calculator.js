@@ -30,6 +30,7 @@ export class Calc {
   lifeSurpassed() {
     if (this.age > this.earthLifeExpectance){
       this.earthSurpassed = parseInt((this.age - this.earthLifeExpectance));
+      this.mercurySurpassed = parseFloat(((this.age - this.earthLifeExpectance) / this.mercury).toFixed(1));
     }
   }
 }
