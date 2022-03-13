@@ -22,5 +22,6 @@ export class Calc {
   }
   lifeResult() {
     this.earthResult = parseInt((this.earthLifeExpectance - this.age));
+    this.mercuryResult = parseInt((this.earthResult / this.mercury));
   }
 }
